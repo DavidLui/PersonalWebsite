@@ -10,7 +10,7 @@
  Project.create(title: '218 Restaurant (2015)', 
  	image: 'http://i.imgur.com/pVkJcYh.png', 
  	description: "218 Restaurant is a personal project that I am currently working on for my uncle's restaurant. Written in HTML and CSS with Ruby on Rails on Sublime Text.", 
- 	link: 'http://davidlui.github.io/projects.html#')
+ 	link: '#')
  Project.create(title: 'Samdango (2015)', 
  	image: 'http://i.imgur.com/ITJBKNq.jpg', 
  	description: 'Samdango is the project for CSE308 (Software Programming) consisting of myself and three other members. Samdango is a website that inherits many functionalities and features of the popular website Fandango, such as account creation, viewing movie information, buying tickets, etc. Written in Java with NetBeans.', 
