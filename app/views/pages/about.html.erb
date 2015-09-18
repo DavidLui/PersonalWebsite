@@ -1,0 +1,85 @@
+    <title>About</title>
+    <style>
+		html {
+				background: url(http://i.imgur.com/F90mgqS.jpg?1) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+		}
+		p, h1 {
+			color: white;
+
+		}
+	</style>
+
+    <nav class="navbar navbar-masthead navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <ul class="nav navbar-nav navbar-right">
+			<div class="rightbar">
+            <li>
+			<a href="https://www.facebook.com/david.lui.712" target="_blank"><%= image_tag("facebook_icon.png", :alt => "fb", hspace: '5', height: '32', width: '32')  %></a>
+
+			<a href="https://www.linkedin.com/profile/view?id=246811667" target="_blank"><%= image_tag("linkedin_icon.png", :alt => "linkedin", hspace: '5', height: '32', width: '32')  %></a>
+
+			<a href="https://github.com/DavidLui" target="_blank"><%= image_tag("github_icon.png", :alt => "github", hspace: '5', height: '32', width: '32')  %></a>
+
+
+			</li>
+			</div>
+        </ul>
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a style="margin-left: 5px;" class="navbar-brand" href="/">David Lui</a>
+        </div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="about">About</a></li>
+            <li><a href="resume">Resume</a></li>
+			<li><a href="projects">Projects</a></li>
+			<li><a href="contact">Contact</a></li>
+			</ul>
+		</div>
+		
+      </div>
+    </nav>
+	<!-- NAVBAR END -->
+
+	<div class="container">
+    <div class="site-wrapper" style="margin-top: 50px;">
+      <div class="site-wrapper-inner">
+        <div class="cover-container" style="width:70%;" style="margin-top: 20px;">
+			<br>
+        <div class="inner cover">
+		<br><br>
+            <h1 class="cover-heading"><b>About Me</b></h1>
+			<hr width = 100%>
+            <p class="lead">I'm a recent graduate of Stony Brook University in the class of 2015.</p>
+
+            <%= image_tag("graduation.jpg", :alt => "graduation", :style => "max-width:100%;") %>
+          
+            <hr width=50%>
+            <p>Note: Waiting for the official graduation ceremony to begin.</p>
+			<br><br>
+
+			<h1 class="cover-heading"><b>Running</b></h1>
+			<hr width = 100%>
+            <p class="lead">I'm a running enthusiast. I've participated in plenty of 5K runs. I have over 600 miles recorded on Nike+. Currently, I am using the Asics Gel Kayano 21 running shoes. 
+            </p>
+            <a href="http://www.amazon.com/ASICS-Gel-Kayano-Running-Lightning-White/dp/B00IIX3YZO/ref=sr_1_1?ie=UTF8&qid=1442339997&sr=8-1&keywords=kayanos+21" target="_blank">Amazon Link</a>
+            <br><br>
+            <%= image_tag("running.jpg", :alt => "running", :style => "max-width:100%;") %>
+          	<hr width=50%>
+            <p>Note: Running the Keith Ferguson race on the Brooklyn Bridge, 2014.</p> 
+			<br><br><br><br><br><br>
+		</div>
+      </div>
+    </div>
+	</div>
+

@@ -1,0 +1,73 @@
+    <title>Home</title>
+    <style>
+		html {
+				background: url(http://i.imgur.com/Aqxn7wz.jpg?1) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+		}
+		p, h1 {
+			color: white;
+
+		}
+	</style>
+
+    <nav class="navbar navbar-masthead navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <ul class="nav navbar-nav navbar-right">
+			<div class="rightbar">
+            <li>
+			<a href="https://www.facebook.com/david.lui.712" target="_blank"><%= image_tag("facebook_icon.png", :alt => "fb", hspace: '5', height: '32', width: '32')  %></a>
+
+			<a href="https://www.linkedin.com/profile/view?id=246811667" target="_blank"><%= image_tag("linkedin_icon.png", :alt => "linkedin", hspace: '5', height: '32', width: '32')  %></a>
+
+			<a href="https://github.com/DavidLui" target="_blank"><%= image_tag("github_icon.png", :alt => "github", hspace: '5', height: '32', width: '32')  %></a>
+
+
+			</li>
+			</div>
+        </ul>
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a style="margin-left: 5px;" class="navbar-brand" href="/">David Lui</a>
+        </div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="resume">Resume</a></li>
+			<li><a href="projects">Projects</a></li>
+			<li><a href="contact">Contact</a></li>
+			</ul>
+		</div>
+		
+      </div>
+    </nav>
+	<!-- NAVBAR END -->
+	
+	<div class="container">
+    <div class="site-wrapper" style="margin-top: 50px;">
+      <div class="site-wrapper-inner">
+        <div class="cover-container" style="width:70%;" style="margin-top: 20px;">
+			<br>
+        <div class="inner cover">
+		<br><br>
+            <h1 style="font-size:50px" class="cover-heading"><b>Hello World!</b></h1>            
+			<hr width=75%>
+
+            <%= image_tag("dog2.jpg", :alt => "dog2", :style => "max-width:100%;") %>
+            <hr width=75%>
+			<p style="font-size:30px;" class="lead">This is David Lui. Welcome to my personal page!</p>
+			<br><br><br><br>
+			
+		</div>
+        </div>
+      </div>
+    </div>
+	

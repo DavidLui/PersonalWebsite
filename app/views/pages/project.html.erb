@@ -1,0 +1,226 @@
+    <title>Projects</title>
+    <style>
+		html {
+				background: url(http://i.imgur.com/F90mgqS.jpg?1) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+		}
+		p, h1 {
+			color: white;
+
+		}
+	</style>
+
+    <nav class="navbar navbar-masthead navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <ul class="nav navbar-nav navbar-right">
+			<div class="rightbar">
+            <li>
+			<a href="https://www.facebook.com/david.lui.712" target="_blank"><%= image_tag("facebook_icon.png", :alt => "fb", hspace: '5', height: '32', width: '32')  %></a>
+
+			<a href="https://www.linkedin.com/profile/view?id=246811667" target="_blank"><%= image_tag("linkedin_icon.png", :alt => "linkedin", hspace: '5', height: '32', width: '32')  %></a>
+
+			<a href="https://github.com/DavidLui" target="_blank"><%= image_tag("github_icon.png", :alt => "github", hspace: '5', height: '32', width: '32')  %></a>
+
+
+			</li>
+			</div>
+        </ul>
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a style="margin-left: 5px;" class="navbar-brand" href="/">David Lui</a>
+        </div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="resume">Resume</a></li>
+			<li class="active"><a href="projects">Projects</a></li>
+			<li><a href="contact">Contact</a></li>
+			</ul>
+		</div>
+		
+      </div>
+    </nav>
+	<!-- NAVBAR END -->
+	
+	<div class="container">
+    <div class="site-wrapper" style="margin-top: 50px;">
+      <div class="site-wrapper-inner">
+        <div class="cover-container" style="width:60%;" style="margin-top: 20px;">
+			<br>
+        <div class="inner cover">
+		<br><br>
+            <h1 class="cover-heading"><b>Projects</b></h1>          
+			<hr width=75%>	
+			<% @projects.each do |project| %> 
+				
+				<h1><%= project.title %></h1>
+				<br>
+
+			<% end %>		
+			<div style="padding:10px;" class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title"><font size="5">218 Restaurant (2015)</font></h2>
+				</div>
+				<div class="panel-body" style="padding:0px;">
+					<img style="max-width:100%;" alt="218restaurant" src ='assets/img/218restaurant.png'></img>
+				</div>
+				
+				<div class="panel panel-info" style="margin-top: 15px;">
+					<div class="panel-heading">
+						<h3 class="panel-title">Description</h3>
+					</div>
+					<div class="panel-body panel-default">
+						<p><font size="4" color="black">218 Restaurant is a personal project that I am currently working on for my uncle's restaurant. Written in HTML and CSS with Ruby on Rails on Sublime Text.</font></p>
+					</div>
+					<div class="panel-footer"><a class="btn btn-primary btn-lg" target="_blank" href="#" role="button">To be completed!</a></div>
+				</div>
+			</div>
+			<br><hr><br><br>
+			<div style="padding:10px;" class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title"><font size="5">Samdango (2015)</font></h2>
+				</div>
+				<div class="panel-body" style="padding:0px;">
+					<img style="max-width:100%;" alt="samdango" src ='assets/img/samdango.jpg'></img>
+				</div>
+				
+				<div class="panel panel-info" style="margin-top: 15px;">
+					<div class="panel-heading">
+						<h3 class="panel-title">Description</h3>
+					</div>
+					<div class="panel-body panel-default">
+						<p><font size="4" color="black">Samdango is the project for CSE308 (Software Programming) consisting of myself and three other members. 
+						Samdango is a website that inherits many functionalities and features of the popular website Fandango, such as account creation, 
+						viewing movie information, buying tickets, etc. Written in Java with NetBeans. </font></p>
+					</div>
+					<div class="panel-footer"><a class="btn btn-primary btn-lg" target="_blank" href="https://github.com/wngsam/CSE-308-Samdango" role="button">Repository</a></div>
+				</div>
+			</div>
+			<br><hr><br><br>
+			<div style="padding:10px;" class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title"><font size="5">Movie-Theater Data Miner (2015)</font></h2>
+				</div>
+				<div class="panel-body" style="padding:0px;">
+					<img style="max-width:100%;" alt="samdango data miner" src ='assets/img/dataminer.png'></img>
+				</div>
+				
+				<div class="panel panel-info" style="margin-top: 15px;">
+					<div class="panel-heading">
+						<h3 class="panel-title">Description</h3>
+					</div>
+					<div class="panel-body panel-default">
+						<p><font size="4" color="black">An independent side project to supplement the Samdango database. Utilizes multiple APIs to generate a list of movies and theaters that are playing them near a given zipcode. Generates a master list in JSON format for easy data reading. Written in Java with NetBeans.</font></p>
+					</div>
+					<div class="panel-footer"><a class="btn btn-primary btn-lg" target="_blank" href="https://github.com/DavidLui/CSE308-Movie-and-Theater-Miner" role="button">Repository</a></div>
+				</div>
+			</div>
+			<br><hr><br><br>
+			<div style="padding:10px;" class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title"><font size="5">FastPass (2015)</font></h2>
+				</div>
+				<div class="panel-body" style="padding:0px;">
+					<img style="max-width:100%;" alt="fastpass" src ='assets/img/fastpass.png'></img>
+				</div>
+				
+				<div class="panel panel-info" style="margin-top: 15px;">
+					<div class="panel-heading">
+						<h3 class="panel-title">Description</h3>
+					</div>
+					<div class="panel-body panel-default">
+						<p><font size="4" color="black">FastPass is a project created for CSE305 (Databases). It is a social website as a combination of Facebook and Google+.
+						Functionalities include posting onto "circles" or pages. Written in Java with NetBeans. </font></p>
+					</div>
+					<div class="panel-footer"><a class="btn btn-primary btn-lg" target="_blank" href="https://github.com/DavidLui/CSE305-Fast-Pass" role="button">Repository</a></div>
+				</div>
+			</div>
+			<br><hr><br><br>
+			<div style="padding:10px;" class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title"><font size="5">Interactive Manipulation of Rigid Body Simulations (2015)</font></h2>
+				</div>
+				<div class="panel-body" style="padding:0px;">
+					<img style="max-width:100%;" alt="Rigid Body Simulations" src ='assets/img/rigidbody.png'></img>
+				</div>
+				
+				<div class="panel panel-info" style="margin-top: 15px;">
+					<div class="panel-heading">
+						<h3 class="panel-title">Description</h3>
+					</div>
+					<div class="panel-body panel-default">
+						<p><font size="4" color="black">This project was created for CSE328 (Computer Graphics). It utilizes a physics engine that was made from scratch to realistically animate objects in motion. Written in C++ with Visual Studio 2010. </font></p>
+					</div>
+					<div class="panel-footer"><a class="btn btn-primary btn-lg" target="_blank" href="https://github.com/DavidLui/CSE328-RigidBody-Simulation/tree/master/problm2" role="button">Repository</a></div>
+				</div>
+			</div>
+			<br><hr><br><br>
+			<div style="padding:10px;" class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title"><font size="5">Ebola Containment (2014)</font></h2>
+				</div>
+				<div class="panel-body" style="padding:0px;">
+					<img style="max-width:100%;" alt="Ebola" src ='assets/img/EbolaContainment.png'></img>
+				</div>
+				
+				<div class="panel panel-info" style="margin-top: 15px;">
+					<div class="panel-heading">
+						<h3 class="panel-title">Description</h3>
+					</div>
+					<div class="panel-body panel-default">
+						<p><font size="4" color="black">Ebola containment was created for CSE381 (Advanced Game Programming) in a group of two. The player controls a white blood cell and combats infected cells around the body, represented by different levels. Written in C# with Unity 3D.</font></p>
+					</div>
+					<div class="panel-footer"><a class="btn btn-primary btn-lg" target="_blank" href="https://github.com/DavidLui/-CSE381-Ebola-Containment" role="button">Repository</a></div>
+				</div>
+			</div>
+			<br><hr><br><br>
+			<div style="padding:10px;" class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title"><font size="5">Balloon Escape (2014)</font></h2>
+				</div>
+				<div class="panel-body" style="padding:0px;">
+					<img style="max-width:100%;" alt="Balloon" src ='assets/img/BalloonEscape.png'></img>
+				</div>
+				
+				<div class="panel panel-info" style="margin-top: 15px;">
+					<div class="panel-heading">
+						<h3 class="panel-title">Description</h3>
+					</div>
+					<div class="panel-body panel-default">
+						<p><font size="4" color="black">Balloon Escape was created for CSE380 (Game Programming) in a group of three students. The player controls a balloon and avoids dangerous objects such as sharp branches and asteroids. Written in C++ with Visual Studio.</font></p>
+					</div>
+					<div class="panel-footer"><a class="btn btn-primary btn-lg" target="_blank" href="https://github.com/DavidLui/-CSE380-Balloon-Escape" role="button">Repository</a></div>
+				</div>
+			</div>
+			<br><hr><br><br>
+			
+		</div>
+		<br><br><br><br>
+			
+
+        </div>
+      </div>
+    </div>
+	</div>
+
+    <footer>
+	<nav style="margin-bottom: -15px;" class="navbar navbar-masthead navbar-inverse navbar-fixed-bottom">
+			<center><font color="white"><p style="margin:7px;">David Lui 2015</p></font></center>
+    </nav>
+	</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

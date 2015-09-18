@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Personalwebsite</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <%= csrf_meta_tags %>
+
+
+
+
 </head>
 <body>
 
 <%= yield %>
 
+	<footer>
+		<nav style="margin-bottom: -15px;" class="navbar navbar-masthead navbar-inverse navbar-fixed-bottom">
+				<center><font color="white"><p style="margin:7px;">David Lui 2015</p></font></center>
+	    </nav>
+	</footer>
 </body>
+
+
 </html>

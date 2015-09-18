@@ -1,0 +1,128 @@
+
+<!-- <h1>Listing projects</h1> 
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Image</th>
+      <th>Description</th>
+      <th>Link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projects.each do |project| %>
+      <tr>
+        <td><%= project.title %></td>
+        <td><%= project.image %></td>
+        <td><%= project.description %></td>
+        <td><%= project.link %></td>
+        <td><%= link_to 'Show', project %></td>
+        <td><%= link_to 'Edit', edit_project_path(project) %></td>
+        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Project', new_project_path %>
+
+-->
+
+
+
+    <title>Projects</title>
+    <style>
+    html {
+        background: url(http://i.imgur.com/F90mgqS.jpg?1) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    p, h1 {
+      color: white;
+
+    }
+  </style>
+
+    <nav class="navbar navbar-masthead navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <ul class="nav navbar-nav navbar-right">
+      <div class="rightbar">
+            <li>
+      <a href="https://www.facebook.com/david.lui.712" target="_blank"><%= image_tag("facebook_icon.png", :alt => "fb", hspace: '5', height: '32', width: '32')  %></a>
+
+      <a href="https://www.linkedin.com/profile/view?id=246811667" target="_blank"><%= image_tag("linkedin_icon.png", :alt => "linkedin", hspace: '5', height: '32', width: '32')  %></a>
+
+      <a href="https://github.com/DavidLui" target="_blank"><%= image_tag("github_icon.png", :alt => "github", hspace: '5', height: '32', width: '32')  %></a>
+
+
+      </li>
+      </div>
+        </ul>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a style="margin-left: 5px;" class="navbar-brand" href="/">David Lui</a>
+        </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="resume">Resume</a></li>
+      <li class="active"><a href="projects">Projects</a></li>
+      <li><a href="contact">Contact</a></li>
+      </ul>
+    </div>
+    
+      </div>
+    </nav>
+  <!-- NAVBAR END -->
+  
+  <div class="container">
+    <div class="site-wrapper" style="margin-top: 50px;">
+      <div class="site-wrapper-inner">
+        <div class="cover-container" style="width:60%;" style="margin-top: 20px;">
+          <br>
+          <div class="inner cover">
+          <br><br>
+          <h1 class="cover-heading"><b>Projects</b></h1>          
+          <hr width=75%>  
+        <% @projects.each do |project| %> 
+          <div style="padding:10px;" class="panel panel-primary">
+              <div class="panel-heading">
+                  <h2 class="panel-title"><font size="5"><%= project.title %></font></h2>
+              </div>
+              <div class="panel-body" style="padding:0px;">
+                  <img style="max-width:100%;" src ='<%= project.image %>'>
+              </div>
+                    
+              <div class="panel panel-info" style="margin-top: 15px;">
+                  <div class="panel-heading">
+                        <h3 class="panel-title">Description</h3>
+                  </div>
+                  <div class="panel-body panel-default">
+                        <p><font size="4" color="black"><%= project.description %></font></p>
+                  </div>
+                  <div class="panel-footer"><a class="btn btn-primary btn-lg" target="_blank" href="<%= project.link %>" role="button">Repository</a>
+                  </div>
+              </div>
+          </div>
+        
+
+          <% end %> 
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
